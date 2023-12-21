@@ -13,8 +13,7 @@ function App() {
       <Routes>
         <Route  path="/" element={<><Navbar1 /><Navigation/><Slider /><Movies />  </>}/>
         <Route  path="/movies" element= {<Movies />} />
-        <Route path="/bookingblack" element= {<Bookticket name="black"/>} />
-        <Route path="/bookingbhediya" element= {<Bookticket name="bhediya" />} />
+        <Route path="/bookingmovie" element= {<Bookticket name="movie"/>} />
         <Route path="/signup" element= {<SignUp />} />
       </Routes>
   );

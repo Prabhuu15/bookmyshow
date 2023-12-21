@@ -37,7 +37,7 @@ export default function SignUp() {
   function submit(e) {
     e.preventDefault();
     axios
-      .post("https://book-my-show-back-end.onrender.com/user", {
+      .post("  http://localhost:8000/users", {
         name: name,
         password: password,
         email: email,
@@ -46,7 +46,7 @@ export default function SignUp() {
         username: username,
       })
       .then((response) => {
-        console.log(response);
+        console.log(response); 
       })
       .catch((error) => {
         "error";

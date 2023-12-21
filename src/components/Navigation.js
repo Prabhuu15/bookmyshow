@@ -11,7 +11,7 @@ function Navigation() {
   const [login, setlogin] = useState("Login/SignUp");
 
   axios
-    .post("https://book-my-show-back-end.onrender.com/check")
+    .post("http://localhost:5000/users")
     .then((response) => {
       console.log(response.data);
       setlogin(response.data);

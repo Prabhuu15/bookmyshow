@@ -1,7 +1,7 @@
 import "../bookticket.css";
 import React from "react";
 import { useState, useRef } from "react";
-import Image1 from "../images/movies_screen/screen.png";
+import Image1 from "../images/Movies/movies_screen/screen.png";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
 
@@ -39,18 +39,10 @@ export default function Bookticket(props) {
         navigate("/");
       }, 3000);
     }
-    let data = {
-      MovieName: props.name,
-      Price: Price,
-      "count ": count,
-    };
-    let fetchoption = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    };
+ 
+  
 
-    fetch(`https://book-my-show-back-end.onrender.com/booking${props.name}`, fetchoption);
+    
   }
 
   return (
